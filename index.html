@@ -1,0 +1,244 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   <title>Flaunter Practice</title>
+</head>
+<body>
+ <section class="container">
+	 
+	 
+  <header>
+	 <div class="navarea">
+	   <div><a href=""><img class="logo" src="img/logo.png"></a></div>
+		<nav>
+		   <ul class="gloval-nav">
+			  <li><a href="">BRANDS</a></li>
+			  <li><a href="">MEDIA</a></li>
+			  <li><a href="">PR AGENCIES</a></li>
+			  <li><span>SING IN</span></li>
+			</ul>
+		  </nav>
+	  </div>
+
+　　　　<div id="nav-toggle">
+            <div></div>
+			<div></div>
+      </div>
+	 
+ 
+   <div id="gloval-nav">
+	   
+    <nav>
+        <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><span><a href="#">ABOUT</a></span></li>
+            <li><span><a href="#">CONTACT</a></span></li>
+            
+        </ul>
+    </nav>
+   </div>
+	  
+	 <div class="bg"></div> 
+	  
+	 </header>
+   
+	<main>
+	 
+   <div class="main">
+	 <div class="maintext">
+	    <h1>Beautiful content management software for PR and marketing teams.</h1>
+		<p>Flaunter helps brands supercharge their assets – streamlining the daily flow of media requests, content sharing, sample tracking and reporting.</p>
+	 </div> 
+	  <div>
+	   <img src="img/Flaunter_Product-Profile-min-1842x1080.png">
+	  </div>
+	</div>
+		
+		<div class="appear"></div>
+	 
+   <div class="box">
+	
+	      
+   <div class="fadeIn brands">
+	<div class="remove">   
+	 <p>FOR BRANDS</p>
+	 <h1>Save time and seamlessly scale your PR efforts.</h1> 
+	 <div class="btn">
+		 <p class="btn1"><a href="">GET STARTED</a></p>
+		 <p class="btn2"><a href="">LEAD MORE</a></p>
+     </div>
+	   </div>
+ 
+	   
+	  <img class='pic pic1' src="img/Home-image1-compressed.jpg">
+    </div>
+	  <img class='pic pic2 without' src="img/TheDolphin.jpg">
+	  <img class='pic pic3 without' src="img/home-image-2.jpg">
+	  <img class='pic pic4 without' src="img/Home-section1-image3-compressed.jpg">
+	   
+	   
+	   <div class="fadeIn media">
+		 <div class="remove">
+	      <p>FOR MEDIA</p>
+	         <h1>Access the latest high resolution content from 100's of premium brands, on-demand.</h1>
+	       <div class="btn">
+		      <p class="btn1"><a href="">GET STARTED</a></p>
+		      <p class="btn2"><a href="">LEAD MORE</a></p>
+           </div>
+		 </div>
+	  <img class='pic pic5 without' src="img/home-image-5.jpg">
+	  <img class='pic pic6' src="img/home-image-6.jpg">
+	   </div>
+	   
+	   <div class="fadeIn agencies">
+		<div class="remove">
+	        <P>FOR AGENCIES</P>
+		   <h1>Save time across the daily flow of media requests, content sharing, sample tracking and reporting.</h1>
+		   <div class="btn">
+		   <p class="btn1"><a href="">GET STARTED</a></p>
+		   <p class="btn2"><a href="">LEAD MORE</a></p>
+           </div>
+	    </div>
+	  <img class='pic pic7' src="img/home-section3-image8-compressed.jpg">
+		 </div>
+	  <img class='pic pic8 without' src="img/home-image-7-2.jpg">
+	   
+   </div>
+  </main>  
+</section>
+	
+	<footer>
+ 
+	<div class="footermenu">
+		<a href='#nav-toggle'><img src="img/logo1.png"></a>
+	
+		<div class="line footermenu1">
+		<a href="">BRANDS</a>
+		<a href="">MEDIA</a>
+		<a href="">PR AGENCIES</a>
+		 </div>
+		
+		<div class="line footermenu2">
+		<a href="">BRAND DIRECTORY</a>
+		<a href="">CASE STUDIES</a>
+		<a href="">BLOG</a>
+		<a href="">PRICING</a>
+		<a href="">FAQ</a>
+		<a href="">ABOUT</a>
+		<a href="">CONTACT</a>
+		 
+		</div>
+		
+		 <div class="icon">
+			 <i style="padding:18px 23px;" class="fab fa-facebook-f"></i>
+			 <i class="fab fa-twitter"></i>
+			 <i style="padding:18px 20px;" class="fab fa-pinterest-p"></i>
+			 <i class="fab fa-linkedin-in"></i>
+			 <i class="fab fa-instagram"></i>
+	   </div>
+		
+		<div class="footertext">
+		     <p><a href="">Terms & Conditions</a><a href="">Privacy Policy</a> <br>
+Copyright © 2020 Flaunter, Ltd. All rights reserved. Site credit.</p>
+		</div>
+	   
+    </div>
+</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		
+		(function($) {
+        $(function () {
+			
+			var body=$('body');
+			
+        $('#nav-toggle').on('click',function() {
+            body.addClass('open');
+			$('.bg').fadeIn();
+			
+			if(body.hasClass('open')) {
+				$('.bg').on('click',function(){
+					$(this).hide();
+					body.removeClass('open');
+				});
+			  }
+			});
+         });
+      })(jQuery);
+		
+		
+		 $(function(){
+			 
+        $(window).scroll(function (){
+			   var dy= $(this).scrollTop();
+		     	if (dy>50){
+					 $('.pic').css('opacity',1);
+				 }else{
+					 $('.pic').css('opacity',0);
+				 }
+			
+        $('.fadeIn').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 100){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});
+		
+		$(function(){
+			
+			 var pos1=$('.pic1').offset();
+			 var pos2=$('.pic2').offset();
+			 var pos3=$('.pic3').offset();
+			 var pos4=$('.pic4').offset();
+			 var pos5=$('.pic5').offset();
+			 var pos6=$('.pic6').offset();
+			 var pos7=$('.pic7').offset();
+			 var pos8=$('.pic8').offset();
+			
+			 $(window).scroll(function(){
+                 var dy= $(this).scrollTop();
+                 console.log(dy);
+				 
+				 
+            if($(window).innerWidth()>= 650){
+                 $('.pic1').css('top',pos1.top+dy/-2);
+                 $('.pic2').css('top',pos2.top+dy/-2);
+                 $('.pic3').css('top',pos3.top+dy/-5);
+                 $('.pic4').css('top',pos4.top+dy/-2);
+                 $('.pic5').css('top',pos5.top+dy/-2);
+                 $('.pic6').css('top',pos6.top+dy/-2);
+                 $('.pic7').css('top',pos7.top+dy/-2);
+                 $('.pic8').css('top',pos8.top+dy/-1);
+			 }
+           });
+			
+			
+		});
+	</script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
